@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="todolistStyling.css">
+</head>
+<body>
+
+<main>
+    <header id="myDIV" class="header">
+        <h2 style="margin:5px">To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title..." aria-label="New task input">
+        <button onclick="newElement()" class="addBtn" aria-label="Add task">Add</button>
+    </header>
+
+    <section>
+        <ul id="myUL">
+            <li>Buy Grocery<span class="close" aria-label="Close task">&times;</span></li>
+            <li class="checked">Take the Vitamins <span class="close" aria-label="Close task">&times;</span></li>
+            <li>Feed the Dog <span class="close" aria-label="Close task">&times;</span></li>
+            <li>Complete the Project <span class="close" aria-label="Close task">&times;</span></li>
+            <li>Attend the Training <span class="close" aria-label="Close task">&times;</span></li>
+            <li class="checked">Clean the Room <span class="close" aria-label="Close task">&times;</span></li>
+        </ul>
+    </section>
+</main>
+
+<!-- Link to external JavaScript file -->
+<script src="Backend.js"></script>
+
+</body>
+</html>
